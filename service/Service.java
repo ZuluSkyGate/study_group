@@ -1,6 +1,8 @@
-package study_group;
+package study_group.service;
 
-import java.util.Iterator;
+import study_group.builder.StudentBuilder;
+import study_group.student.Student;
+import study_group.study_group.StudyGroup;
 
 public class Service {
     private StudyGroup studyGroup;

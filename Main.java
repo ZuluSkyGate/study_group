@@ -1,8 +1,10 @@
 package study_group;
 
+import study_group.service.Service;
+
 public class Main {
     public static void main(String[] args) {
-        Servise servise = new Servise();
+        Service servise = new Service();
 
         servise.addStudent("Паша", 18);
         servise.addStudent("Маша", 19);

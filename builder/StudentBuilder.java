@@ -1,4 +1,6 @@
-package study_group;
+package study_group.builder;
+
+import study_group.student.Student;
 
 public class StudentBuilder {
     private long genId;

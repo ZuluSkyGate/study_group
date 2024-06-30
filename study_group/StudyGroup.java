@@ -1,9 +1,14 @@
-package study_group;
+package study_group.study_group;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+
+import study_group.student.Student;
+import study_group.student.comparators.StudentComparatorByAge;
+import study_group.student.comparators.StudentComparatorByName;
+import study_group.study_group.iterator.StudentIterator;
 
 public class StudyGroup implements Iterable<Student>{
     private List<Student> studentList;
@@ -18,17 +23,17 @@ public class StudyGroup implements Iterable<Student>{
     }
 
     public void sortByName() {
-        Collections.sort(studentList);
+        studentList.sort(new StudentComparatorByName());
     } 
 
     public void sortByAge() {
-        Collections.sort(studentList, new StudentComparatorByAge());
+        studentList.sort(new StudentComparatorByAge());
     }
 
 
     @Override
     public Iterator<Student> iterator() {
-        return studentList.iterator();
+        return new StudentIterator(studentList);
     }
 
     

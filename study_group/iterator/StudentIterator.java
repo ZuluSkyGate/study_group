@@ -1,6 +1,9 @@
-package study_group;
+package study_group.study_group.iterator;
 
 import java.util.List;
+
+import study_group.student.Student;
+
 import java.util.Iterator;
 
 public class StudentIterator implements Iterator<Student> {
